@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Q3 JS</title>
+	
+	<script type="text/javascript">
+
+	function myFunction1() {
+		var one= document.getElementById("one").value;
+		var two= document.getElementById("two").value;
+		var sum= parseInt(one) + parseInt(two);
+		document.getElementById("displ").innerHTML = sum;
+
+   }
+
+   
+	</script>
+	<style>
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+  font-size: 12px;
+}
+     #displ{
+     	color: white;
+     	font-size: 20px;
+
+     }
+	</style>
+
+</head>
+<body style="background-color:red">
+
+<H1 style="color:white;text-align:center"> Sum of two numbers</h1>
+
+	<input type="text" id="one" placeholder="1st Number">
+	<input type="text" id="two" placeholder="2nd Number">
+	<button onclick="myFunction1()">Sum</button>
+	<div id="displ"></div>
+
+
+</body>
+</html>
